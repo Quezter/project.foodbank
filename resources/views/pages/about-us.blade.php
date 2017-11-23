@@ -14,7 +14,7 @@
         </p>
         
         <h3>WHAT WE DO</h3>
-        <h1>We provide the support where no support is given.</h1>
+        <h1><em>We provide the support where no support is given.</em></h1>
         <p>
           The Amsterdam Food Bank is a non-profit organization that relies solely on donations to feed 20 000 people across the city of Amsterdam and North-Holland. With a lack of financial and fresh produce support, the FoodBank Project aims to provide support in these areas through creating and providing long-term sustainable solutions.
         </p>
