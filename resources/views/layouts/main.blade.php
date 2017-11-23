@@ -6,14 +6,14 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <!-- Facebook Opengraph integration: //developers.facebook.com/docs/sharing/opengraph -->
     <meta property="og:title" content="">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
 
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <!-- Twitter Cards integration: //dev.twitter.com/cards/  -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="">
     <meta name="twitter:title" content="">
@@ -24,7 +24,7 @@
     <link href="images/favicon.ico" rel="icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
 
     <!-- Libraries CSS Files -->
     <link href="{{ URL::asset('vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
@@ -34,9 +34,9 @@
 
     <!-- =======================================================
       Theme Name: Bell
-      Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
+      Theme URL: //bootstrapmade.com/bell-free-bootstrap-4-template/
       Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
+      Author URL: //bootstrapmade.com
     ======================================================= -->
   </head>
 
@@ -133,7 +133,7 @@
           </div>
 
           <div id="btn-apply-now" class="col-lg-3 col-sm-12 text-lg-right text-center">
-            <a class="btn-bell btn-ghost" href="https://www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank">
+            <a class="btn-bell btn-ghost" href="//www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank">
               @lang('global.apply_now')
             </a>
           </div>
@@ -155,10 +155,10 @@
                 <!--
                   All the links in the footer should remain intact.
                   You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bell
+                  Licensing information: //bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: //bootstrapmade.com/buy/?theme=Bell
                 -->
-                <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by BootstrapMade
+                <a href="//bootstrapmade.com/">Bootstrap Themes</a> by BootstrapMade
               </div>
             </div>
 
