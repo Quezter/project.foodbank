@@ -8096,18 +8096,15 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 10px 0px 9px;
   }
 }
+.sticky-wrapper {
+  top: -70px;
+  z-index: 10;
+  position: relative;
+}
 .about-us-wrapper {
   margin: 20px 0;
 }
 .about-us-wrapper h1,
 .about-us-wrapper h3 {
   color: #199EB8;
-}
-.about-us-wrapper img {
-  position: absolute;
-  top: 50%;
-  margin-top: -400px;
-}
-.about-us-wrapper .au-column {
-  height: 100%;
 }

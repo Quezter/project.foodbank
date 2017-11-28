@@ -26,6 +26,7 @@
           </div>
         </li>
         
+        <!--
         <li>
           <time datetime="2014-07-20">
             <span class="day">4</span>
@@ -45,6 +46,7 @@
             </ul>
           </div>
         </li>
+        -->
       </ul>
     </div>
   </div>

@@ -19,4 +19,4 @@ Route::get('/event', 'PageController@event');
 
 Route::get('/about-us', 'PageController@aboutUs');
 
-Route::get('/contact-us', 'PageController@contactUs');
+// Route::get('/contact-us', 'PageController@contactUs');

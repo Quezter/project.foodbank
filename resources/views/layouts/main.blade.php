@@ -74,7 +74,7 @@
             <li><a href="/project">@lang('global.projects')</a></li>
             <li><a href="/event">@lang('global.events')</a></li>
             <li><a href="/about-us">@lang('global.about_us')</a></li>
-            <li><a href="/contact-us">@lang('global.contact_us')</a></li>
+            <li><a href="http://www.amsterdam.voedselbank.org/doneerknop/" target="_blank">@lang('global.donate')</a></li>
             <!--
             <li class="menu-has-children"><a href="">Drop Down</a>
               <ul>
@@ -107,7 +107,7 @@
           <a href="#">
             <i class="fa fa-instagram"></i>
           </a>
-          <a href="mailto:topalova.alina@gmail.com">
+          <a href="mailto:example@email.com">
             <i class="fa fa-envelope"></i>
           </a>
         </nav>
@@ -134,7 +134,7 @@
 
           <div id="btn-apply-now" class="col-lg-3 col-sm-12 text-lg-right text-center">
             <a class="btn-bell btn-ghost" href="https://www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank">
-              @lang('global.apply_now')
+              @lang('global.join_us')
             </a>
           </div>
         </div>
@@ -147,7 +147,7 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-lg-6 col-xs-12 text-lg-left">
+            <div class="col-lg-3 col-xs-12 text-lg-left">
               <p class="copyright-text">
                 © BELL Theme
               </p>
@@ -160,6 +160,15 @@
                 -->
                 <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by BootstrapMade
               </div>
+            </div>
+            
+            <div class="col-lg-3">
+                <div class="credits">
+                  Email: <a href="mailto:example@email.com">example@email.com</a>
+                </div>
+                <div class="credits">
+                  Phone: <a href="tel:+3590883333333">0883 33 33 33</a>
+                </div>
             </div>
 
             <div class="col-lg-6 col-xs-12 text-lg-right text-center">
@@ -181,11 +190,10 @@
                 </li>
 
                 <li class="list-inline-item">
-                  <a href="/contact-us">@lang('global.contact_us')</a>
+                  <a href="http://www.amsterdam.voedselbank.org/doneerknop/" target="_blank">@lang('global.donate')</a>
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>

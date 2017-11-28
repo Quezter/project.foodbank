@@ -22,28 +22,6 @@
       </form>
     </div>
   @endif
-
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-md-2">
-        <a href="https://www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank" class="alert-link">
-          <div class="alert alert-info hero-alert">
-            <strong>@lang('global.join_us')</strong>.
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <a href="http://www.amsterdam.voedselbank.org/doneerknop/" target="_blank" class="alert-link" >
-          <div class="alert alert-success hero-alert">
-            <strong>@lang('global.donate')</strong>.
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
 </section>
 <!-- /Hero -->
 @endsection
@@ -135,7 +113,8 @@
 
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="/contact-us"><img alt="" src="images/join-us.jpeg">
+            <a href="https://www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank">
+              <img alt="" src="images/join-us.jpeg">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
