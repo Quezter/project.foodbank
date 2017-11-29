@@ -163,12 +163,9 @@
             </div>
             
             <div class="col-lg-3">
-                <div class="credits">
-                  Email: <a href="mailto:example@email.com">example@email.com</a>
-                </div>
-                <div class="credits">
-                  Phone: <a href="tel:+3590883333333">0883 33 33 33</a>
-                </div>
+                <p class="copyright-text credits">
+                  Email: <a style="font-weight: 600;" href="mailto:example@email.com">example@email.com</a>
+                </p>
             </div>
 
             <div class="col-lg-6 col-xs-12 text-lg-right text-center">

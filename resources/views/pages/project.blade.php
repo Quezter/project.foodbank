@@ -3,15 +3,6 @@
 
 @section('main')
   <div class="container">
-    <div class="alert alert-dismissible alert-success" style="margin-top: 20px;">
-      <p style="color: white;">
-        Currently, we have a single project underway. As we build capacity we will be able to do more for the Amsterdam food bank and the families that they serve.
-      </p>
-      <p style="color: white;">
-        Feel like you could make an impact and help us grow as an organization? Join us today and help us make a difference!
-      </p>
-    </div>
-    
     <div>
       <div class="jumbotron project-jumbotron" style="margin-top: 20px;">
         <h1 class="display-3">Fresh Food Brigade</h1>

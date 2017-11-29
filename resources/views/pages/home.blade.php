@@ -7,10 +7,6 @@
     <img style="height: 50px;" src="images/logo-vu.png" alt="Vrije Universiteit" />
     <img style="height: 50px;" src="images/logo-voedselbank.png" alt="VOEDSELBANK" />
   </div>
-  <div style="z-index: 1; color: #5d5d5d; position: absolute; top: 20; left: 20; font-family: 'Raleway', Helvetica, Arial, sans-serif; font-weight: 900">
-    <h3>@lang('global.project_name')</strong></h3>
-    <h4><em>@lang('global.project_description')</em></h4>
-  </div>
   @if(Auth::guest())
 
   @else

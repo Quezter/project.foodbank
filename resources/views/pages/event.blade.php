@@ -2,8 +2,8 @@
 @section('title', 'Events')
 
 @section('main')
-  <div class="container">
-  <div class="row">
+<div class="container">
+  <div class="row event-container">
     <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
       <ul class="event-list">
         <li>

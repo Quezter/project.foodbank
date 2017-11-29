@@ -551,6 +551,9 @@ body {
         color: @color-primary;
         margin-bottom: 25px;
     }
+    p {
+        font-size: 20px;
+    }
 }
 .portfolio-grid {
     margin-top: 65px;
@@ -1183,6 +1186,31 @@ body {
     }
 }
 
+.event-container {
+    display: table;
+    position: relative;
+    background-image: url(../images/event-cover.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    padding: 20px 0;
+    border: 20px solid white;
+    &:after {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, .65);
+        width: 100%;
+        min-height: 100%;
+        left: 0;
+        top: 0;
+    }
+    
+    .event-list {
+        position: relative;
+        z-index: 1;
+    }
+}
 
 /// header
 .sticky-wrapper {
@@ -1206,3 +1234,4 @@ body {
         // height: 100%;
     }
 }
+

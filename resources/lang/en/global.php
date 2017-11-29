@@ -21,7 +21,7 @@ return [
     "about_us" => "About Us",
     "contact_us" => "Contact Us",
 
-    "title_xtra_info_projects" => "Our Projects",
+    "title_xtra_info_projects" => "Our Initiatives",
     "body_xtra_info_projects" => "Things we've done and things we're doing.",
     "title_xtra_info_events" => "Our Events",
     "body_xtra_info_events" => "What's going on in our calendar?",
@@ -31,7 +31,7 @@ return [
     "body_xtra_info_contacts" => "Become a volunteer or a full-time project member.",
 
     "goals" => "Goals",
-    "goal_title_first" => "Deliver long term stability and support to the Amsterdam Foodbank",
+    "goal_title_first" => "Deliver long term stability and support to the Foodbank",
     "goal_body_first" => "We are actively recruiting organization, members and volunteers.",
     "goal_title_second" => "Optimize the Food banks logistic network.",
     "goal_body_second" => "We are currently underway, optimizing the fresh food brigades routing system.",
