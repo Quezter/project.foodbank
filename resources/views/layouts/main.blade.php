@@ -71,7 +71,7 @@
 
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li><a href="/project">@lang('global.projects')</a></li>
+            <li><a href="/project">@lang('global.initiatives')</a></li>
             <li><a href="/event">@lang('global.events')</a></li>
             <li><a href="/about-us">@lang('global.about_us')</a></li>
             <li><a href="http://www.amsterdam.voedselbank.org/doneerknop/" target="_blank">@lang('global.donate')</a></li>
@@ -175,7 +175,7 @@
                 </li>
 
                 <li class="list-inline-item">
-                  <a href="/project">@lang('global.projects')</a>
+                  <a href="/project">@lang('global.initiatives')</a>
                 </li>
 
                 <li class="list-inline-item">

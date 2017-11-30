@@ -16,7 +16,7 @@ return [
     "project_description" => "A Vrije Universitiet Amsterdam initiative.",
 
     "home" => "Home",
-    "projects" => "Projects",
+    "initiatives" => "Initiatives",
     "events" => "Events",
     "about_us" => "About Us",
     "contact_us" => "Contact Us",
@@ -31,12 +31,12 @@ return [
     "body_xtra_info_contacts" => "Become a volunteer or a full-time project member.",
 
     "goals" => "Goals",
-    "goal_title_first" => "Deliver long term stability and support to the Foodbank",
-    "goal_body_first" => "We are actively recruiting organization, members and volunteers.",
-    "goal_title_second" => "Optimize the Food banks logistic network.",
-    "goal_body_second" => "We are currently underway, optimizing the fresh food brigades routing system.",
-    "goal_title_third" => "Provide the hands and brains to help in everyday operations.",
-    "goal_body_third" => "We are volunteering our student services, both mental and physical.",
+    "goal_title_first" => "Provide.",
+    "goal_body_first" => "Provide long term operational assistance to the Amsterdam Food Bank.",
+    "goal_title_second" => "Optimize.",
+    "goal_body_second" => "Optimize logistic and business operations within the Amsterdam Food Bank.",
+    "goal_title_third" => "Support.",
+    "goal_body_third" => "Support comunity-based initiatives of the Amsterdam Food Bank.",
 
     "mission_label" => "Our Mission",
     "mission" => "Our mission is to engage students in a social project which aims to utilize their main resource, knowledge, to help improve and provide support for the Amsterdam Food Bank.",

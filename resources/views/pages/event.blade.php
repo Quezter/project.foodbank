@@ -15,7 +15,7 @@
           </time>
           <div class="info">
             <h2 class="title">Launch!</h2>
-            <p class="desc">Come join us for drinks as we discuss what the FoodBank project is all about! We look forward to hosting you!</p>
+            <p class="desc">Come join us for drinks as we discuss what Project FoodBank is all about! We look forward to hosting you!</p>
           </div>
           <div class="social">
             <ul>
