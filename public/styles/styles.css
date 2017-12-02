@@ -7887,7 +7887,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .project-jumbotron {
   display: table;
   position: relative;
-  background-image: url(../images/at-warehouse.jpg);
   background-size: cover;
   width: 100%;
   height: 60vh;
@@ -7913,6 +7912,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .project-end {
   margin-bottom: 55px;
+}
+.init-title {
+  color: #199EB8;
+}
+.init-cover {
+  text-align: center;
+  padding-top: 30px;
+}
+.init-cover img {
+  width: 100%;
 }
 .event-list {
   list-style: none;
@@ -8112,7 +8121,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   content: '';
   z-index: 0;
   position: absolute;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(255, 255, 255, 0.65);
   width: 100%;
   min-height: 100%;
   left: 0;

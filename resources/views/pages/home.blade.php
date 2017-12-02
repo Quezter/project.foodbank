@@ -3,9 +3,9 @@
 @section('hero')
 <!-- Hero -->
 <section class="hero">
-  <div class="pull-right" style="z-index: 1; position: absolute; top: 20; right: 20;">
-    <img style="height: 50px;" src="images/logo-vu.png" alt="Vrije Universiteit" />
-    <img style="height: 50px;" src="images/logo-voedselbank.png" alt="VOEDSELBANK" />
+  <div class="pull-right" style="z-index: 1; position: absolute; top: 20; left: 20;">
+    <img style="height: 55px;" src="images/logo-vu-and-sbe.png" alt="Vrije Universiteit" />
+    <img style="height: 55px;" src="images/logo-voedselbank.png" alt="VOEDSELBANK" />
   </div>
   @if(Auth::guest())
 
@@ -40,7 +40,7 @@
       <div class="row">
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="/project"><img alt="" src="images/projects.jpeg">
+            <a href="/project"><img alt="" src="images/projects.jpg">
             <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
@@ -63,7 +63,7 @@
 
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="/event"><img alt="" src="images/events.jpeg">
+            <a href="/event"><img alt="" src="images/events.jpg">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
@@ -110,7 +110,7 @@
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
             <a href="https://www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank">
-              <img alt="" src="images/join-us.jpeg">
+              <img alt="" src="images/join-us.jpg">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">

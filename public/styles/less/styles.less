@@ -942,7 +942,7 @@ body {
 .project-jumbotron {
     display: table;
     position: relative;
-    background-image: url(../images/at-warehouse.jpg);
+    // background-image: url(../images/at-warehouse.jpg);
     background-size: cover;
     width: 100%;
     height: 60vh;
@@ -974,8 +974,17 @@ body {
     margin-bottom: 55px;
 }
 
+.init-title {
+    color: @color-primary;
+}
 
-
+.init-cover {
+    text-align: center;
+    padding-top: 30px;
+    img {
+        width: 100%;
+    }
+}
 
 
 
@@ -1199,7 +1208,7 @@ body {
         content: '';
         z-index: 0;
         position: absolute;
-        background: rgba(0, 0, 0, .65);
+        background: rgba(255, 255, 255, .65);
         width: 100%;
         min-height: 100%;
         left: 0;
