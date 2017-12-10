@@ -102,11 +102,11 @@
         <!-- #nav-menu-container -->
 
         <nav class="nav social-nav pull-right hidden-sm-down">
-          <a id="change-lang">
+          <a id="change-lang" style="text-transform: uppercase;">
             @if(App::getLocale() === 'en') 
-              <i style="text-transform: uppercase;">NL</i>
+              <span>NL</span>
             @else
-              <i style="text-transform: uppercase;">EN</i>
+              <span>EN</span>
             @endif
           </a>
           <a href="https://www.facebook.com/ProjectFoodBank/" target="_blank">
