@@ -14,8 +14,8 @@
             <span class="time">5:00 PM</span>
           </time>
           <div class="info">
-            <h2 class="title">Launch!</h2>
-            <p class="desc">Come join us for drinks as we discuss what Project FoodBank is all about! We look forward to hosting you!</p>
+            <h2 class="title">@lang('global.event_one_title')</h2>
+            <p class="desc">@lang('global.event_one_body')</p>
           </div>
           <div class="social">
             <ul>

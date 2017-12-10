@@ -4,8 +4,12 @@
 <!-- Hero -->
 <section class="hero">
   <div class="pull-right" style="z-index: 1; position: absolute; top: 20; left: 20;">
-    <img style="height: 55px;" src="images/logo-vu-and-sbe.png" alt="Vrije Universiteit" />
-    <img style="height: 55px;" src="images/logo-voedselbank.png" alt="VOEDSELBANK" />
+    <a href="https://sbe.vu.nl/en/" target="_blank">
+      <img style="height: 55px;" src="images/logo-vu-and-sbe.png" alt="Vrije Universiteit" />
+    </a>
+    <a href="http://www.amsterdam.voedselbank.org" target="_blank">
+      <img style="height: 55px;" src="images/logo-voedselbank.png" alt="VOEDSELBANK" />
+    </a>
   </div>
   @if(Auth::guest())
 

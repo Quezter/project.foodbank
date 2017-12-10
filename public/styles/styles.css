@@ -7567,12 +7567,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .portfolio-grid .row > div .card .portfolio-over > div {
   position: relative;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 .portfolio-grid .row > div .card .portfolio-over .card-title {
   color: #fff;
-  font-size: 30px;
+  font-size: 26px;
 }
 .portfolio-grid .row > div .card .portfolio-over .card-text {
   color: #fff;
