@@ -7891,6 +7891,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   height: 60vh;
 }
+.project-jumbotron.ffb {
+  background-image: url(../images/at-warehouse.jpg);
+}
+.project-jumbotron.icb {
+  background-image: url(../images/initiatives-icb.jpg);
+}
 .project-jumbotron:after {
   content: '';
   z-index: 0;
