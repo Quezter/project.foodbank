@@ -11,6 +11,11 @@
       <img style="height: 55px;" src="images/logo-voedselbank.png" alt="VOEDSELBANK" />
     </a>
   </div>
+  <div style="z-index: 1; position: absolute; bottom: 100; right: 20;">
+    <a href="/">
+      <img style="height: 220px;" src="images/logo-with-text.png" alt="PFB" />
+    </a>
+  </div>
   @if(Auth::guest())
 
   @else

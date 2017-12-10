@@ -64,14 +64,15 @@
 
         <a href="{{ url('/') }}">
           <div id="logo" class="pull-left">
-            {{-- <img src="{{ URL::asset('images/logo-nav.png') }}" alt="" title="" /></img> --}}
+            {{-- <img src="{{ URL::asset('images/logo.png') }}" alt="" title="" /></img> --}}
             <!-- Uncomment below if you prefer to use a text image -->
-            <h1 style="color: white;">PFB</h1>
+            {{-- <h1 style="color: white;">Home</h1> --}}
           </div>
         </a>
 
         <nav id="nav-menu-container">
           <ul class="nav-menu">
+            <li><a href="/">@lang('global.home')</a></li>
             <li><a href="/about-us">@lang('global.about_us')</a></li>
             <li><a href="/project">@lang('global.initiatives')</a></li>
             <li><a href="/event">@lang('global.events')</a></li>
