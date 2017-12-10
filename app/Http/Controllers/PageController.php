@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Cookie;
 
 class PageController extends Controller
 {
@@ -10,7 +12,7 @@ class PageController extends Controller
    * Opens the home page.
    *
    */
-  function start() {
+  function start(Request $request) {
     return view('pages.home');
   }
 
@@ -19,6 +21,7 @@ class PageController extends Controller
    *
    */
   function project() {
+    
     return view('pages.project');
   }
 
@@ -45,14 +48,24 @@ class PageController extends Controller
   function contactUs() {
     return view('pages.contact-us');
   }
-
-  /**
-   * Opens the coin info page.
-   *
-   */
-  function coinInfo($code='') {
-    return view('pages.coins')->with('code', $code);
+  
+  function changeLang(Request $request) {
+    $app= App::getFacadeRoot();
+    $currentLocale = $request->cookie('locale') ?: 'en';
+    
+    switch ($currentLocale) {
+      case 'nl':
+        $currentLocale = 'en';
+        break;
+      case 'en':
+        $currentLocale = 'nl';
+        break;
+      default:
+        $currentLocale = 'en';
+        break;
+    }
+    
+    Cookie::queue('locale', $currentLocale, 60);        
+    return;
   }
-
-
 }

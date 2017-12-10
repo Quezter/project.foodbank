@@ -19,4 +19,6 @@ Route::get('/event', 'PageController@event');
 
 Route::get('/about-us', 'PageController@aboutUs');
 
+Route::post('/api/lang', 'PageController@changeLang');
+
 // Route::get('/contact-us', 'PageController@contactUs');

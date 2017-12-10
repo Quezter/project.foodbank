@@ -116,4 +116,19 @@ $(document).ready(function() {
     return false;
   });
 
+  $('#change-lang').click(function() {
+      $.ajax({
+           type: "POST",
+           headers: {
+             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+           },
+           url: '/api/lang',
+           data: { lang: 'toggle' },
+           success: function(html) {
+             location.reload();
+           }
+      });
+  })
+
+
 });

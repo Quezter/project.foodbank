@@ -12,6 +12,7 @@
     <meta property="og:url" content="">
     <meta property="og:site_name" content="">
     <meta property="og:description" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
     <meta name="twitter:card" content="summary">
@@ -101,8 +102,12 @@
         <!-- #nav-menu-container -->
 
         <nav class="nav social-nav pull-right hidden-sm-down">
-          <a href="">
-            <i class="">NL</i>
+          <a id="change-lang">
+            @if(App::getLocale() === 'en') 
+              <i style="text-transform: uppercase;">NL</i>
+            @else
+              <i style="text-transform: uppercase;">EN</i>
+            @endif
           </a>
           <a href="#">
             <i class="fa fa-facebook"></i>
