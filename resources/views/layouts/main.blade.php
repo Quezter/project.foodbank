@@ -109,13 +109,13 @@
               <i style="text-transform: uppercase;">EN</i>
             @endif
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/ProjectFoodBank/" target="_blank">
             <i class="fa fa-facebook"></i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/project__foodbank/" target="_blank">
             <i class="fa fa-instagram"></i>
           </a>
-          <a href="mailto:example@email.com">
+          <a href="mailto:info@projectfoodbank.org">
             <i class="fa fa-envelope"></i>
           </a>
         </nav>
@@ -141,7 +141,7 @@
           </div>
 
           <div id="btn-apply-now" class="col-lg-3 col-sm-12 text-lg-right text-center">
-            <a class="btn-bell btn-ghost" href="https://www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank">
+            <a class="btn-bell btn-ghost" href="https://docs.google.com/forms/d/1Tv7wzKeA3AQSJHzN7LGTTmEJLckNC67OrTNGd_agUPk/viewform?ts=5a2a607d&edit_requested=true" target="_blank">
               @lang('global.join_us')
             </a>
           </div>
@@ -172,7 +172,7 @@
             
             <div class="col-lg-3">
                 <p class="copyright-text credits">
-                  Email: <a style="font-weight: 600;" href="mailto:example@email.com">example@email.com</a>
+                  Email: <a style="font-weight: 600;" href="mailto:info@projectfoodbank.org">info@projectfoodbank.org</a>
                 </p>
             </div>
 

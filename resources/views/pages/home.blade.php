@@ -113,7 +113,7 @@
 
         <div class="col-lg-3 col-sm-6 col-xs-12">
           <div class="card card-block">
-            <a href="https://www.cognitoforms.com/TheFoodBankProject/ApplicationToJoinTheFoodBankProject" target="_blank">
+            <a href="https://docs.google.com/forms/d/1Tv7wzKeA3AQSJHzN7LGTTmEJLckNC67OrTNGd_agUPk/edit?ts=5a2a607d" target="_blank">
               <img alt="" src="images/join-us.jpg">
               <div class="portfolio-over">
                 <div>
