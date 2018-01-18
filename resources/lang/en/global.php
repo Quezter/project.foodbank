@@ -55,6 +55,7 @@ return [
     
     "event_one_title" => "Launch!",
     "event_one_body" => "Come join us for drinks as we discuss what Project FoodBank is all about! We look forward to hosting you!",
+    "event_one_location" => "Location: ",
 
     "about_title_one" => "WHO WE ARE",
     "about_body_one_one" => "We are a student organization operating out of the Vrije Universiteit Amsterdam. Originally, we consisted of 9 members from the Transport and Supply Chain Management master’s program, alongside Professor Sander de Leeuw. We were first tasked with aiding and improving the logistics processes of the fresh food brigade, an Amsterdam Food Bank initiative. This initiative tries to reduce the amount of processed foods distributed to families and bring more fresh food to those who need it most.",

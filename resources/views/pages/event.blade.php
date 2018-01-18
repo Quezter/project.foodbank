@@ -16,11 +16,12 @@
           <div class="info">
             <h2 class="title">@lang('global.event_one_title')</h2>
             <p class="desc">@lang('global.event_one_body')</p>
+            <p class="desc"><strong>@lang('global.event_one_location')</strong> Vrije Universiteit Amsterdam, HG 5A36</p>
           </div>
           <div class="social">
             <ul>
               <li class="facebook" style="width:33%;">
-                <a href="https://www.facebook.com/ProjectFoodBank/" target="_blank"><span class="fa fa-facebook"></span></a>
+                <a href="https://www.facebook.com/events/1078464082295787/" target="_blank"><span class="fa fa-facebook"></span></a>
               </li>
               <li class="instagram" style="width:34%;">
                 <a href="https://www.instagram.com/project__foodbank/" target="_blank"><span class="fa fa-instagram"></span></a>

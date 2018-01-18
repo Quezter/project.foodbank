@@ -55,6 +55,7 @@ return [
     
     "event_one_title" => "Lancering!",
     "event_one_body" => "Kom gezellig een drankje doen terwijl wij vertellen wat Project FoodBank precies inhoudt! Je bent van harte welkom!",
+    "event_one_location" => "Plaats: ",
 	
   	"about_title_one" => "WIE ZIJN WIJ",
   	"about_body_one_one" => "Wij zijn een organisatie bestaande uit studenten van de Vrije Universiteit Amsterdam. Oorspronkelijk bestaat de organisatie uit 9 studenten van de master Transport and Supply Chain Management, samen met Professor Sander de Leeuw. We kregen eerst de taak te helpen bij en het verbeteren van de logistieke processen van de voedselbrigade, een initiatief van de Voedselbank Amsterdam. Dit initiatief probeert de hoeveelheid verwerkt voedsel, dat wordt verdeeld over de families, te verminderen en meer vers voedsel te brengen naar families die dit het meeste nodig hebben.",
