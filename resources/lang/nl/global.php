@@ -43,7 +43,7 @@ return [
     "motivation_quote" => "If you can't feed a hundred people, then feed just one.",
     "motivation_author" => "Mother Teresa",
     "apply_now" => "meld je nu aan",
-    "join_us" => "Doe mee!",
+    "join_us" => "Doe mee",
     "donate" => "Doneer",
     "read_more" => "lees meer",
     
