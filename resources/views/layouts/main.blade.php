@@ -77,6 +77,7 @@
             <li><a href="/project">@lang('global.initiatives')</a></li>
             <li><a href="/event">@lang('global.events')</a></li>
             <li><a href="http://www.amsterdam.voedselbank.org/doneerknop/" target="_blank">@lang('global.donate')</a></li>
+            <li><a href="https://docs.google.com/forms/d/1Tv7wzKeA3AQSJHzN7LGTTmEJLckNC67OrTNGd_agUPk/viewform?ts=5a2a607d&edit_requested=true" target="_blank">@lang('global.join_us')</a></li>
             <!--
             <li class="menu-has-children"><a href="">Drop Down</a>
               <ul>
