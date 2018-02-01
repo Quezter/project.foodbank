@@ -7,8 +7,10 @@
     <a href="https://sbe.vu.nl/en/" target="_blank">
       <img style="height: 55px;" src="images/logo-vu-and-sbe.png" alt="Vrije Universiteit" />
     </a>
+  </div>
+  <div class="pull-right" style="z-index: 1; position: absolute; top: 80; left: 20;">
     <a href="http://www.amsterdam.voedselbank.org" target="_blank">
-      <img style="height: 55px;" src="images/logo-voedselbank.png" alt="VOEDSELBANK" />
+      <img style="height: 120px;" src="images/logo-voedselbank.jpg" alt="VOEDSELBANK" />
     </a>
   </div>
   <div style="z-index: 1; position: absolute; bottom: 100; right: 20;">
