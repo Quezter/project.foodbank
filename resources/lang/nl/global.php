@@ -46,6 +46,7 @@ return [
     "join_us" => "Doe mee",
     "donate" => "Doneer",
     "read_more" => "lees meer",
+    "event_location" => "Plaats: ",
     
     "initiative_one_title" => "Voedselbrigade",
     "initiative_one_body" => "Momenteel is een team van studenten van de master Transport and Supply Chain Management bezig met een project om de service van de fresh food brigade, een initiatief van de Voedselbank Amsterdam, te verbeteren. Het team is verantwoordelijk voor de inspectie van de voedselbrigade en houdt zich bezig met; het standaardiseren van processen binnen het inbound en outbound aspect van de activiteiten van de Voedselbank, het ontwerpen van een optimale route voor het ophalen van donaties van verschillende supermarkten en tot slot het creëren van verbindingen tussen de ophaalpunten en de distributiepunten van de Voedselbank Amsterdam.",
@@ -55,7 +56,6 @@ return [
     
     "event_one_title" => "Lancering!",
     "event_one_body" => "Kom gezellig een drankje doen terwijl wij vertellen wat Project FoodBank precies inhoudt! Je bent van harte welkom!",
-    "event_one_location" => "Plaats: ",
 	
   	"about_title_one" => "WIE ZIJN WIJ",
   	"about_body_one_one" => "Wij zijn een organisatie bestaande uit studenten van de Vrije Universiteit Amsterdam. Oorspronkelijk bestaat de organisatie uit 9 studenten van de master Transport and Supply Chain Management, samen met Professor Sander de Leeuw. We kregen eerst de taak te helpen bij en het verbeteren van de logistieke processen van de voedselbrigade, een initiatief van de Voedselbank Amsterdam. Dit initiatief probeert de hoeveelheid verwerkt voedsel, dat wordt verdeeld over de families, te verminderen en meer vers voedsel te brengen naar families die dit het meeste nodig hebben.",
