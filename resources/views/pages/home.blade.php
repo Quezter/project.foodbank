@@ -18,17 +18,6 @@
       <img style="height: 220px;" src="images/logo-with-text.png" alt="PFB" />
     </a>
   </div>
-  @if(Auth::guest())
-
-  @else
-    <div class="pull-right" style="z-index: 1; position: absolute; top: 20; right: 20;">
-      <form>
-        <input type="text" placeholder="[devinfo-Logged]" />
-        <input type="text" placeholder="Wallet" />
-        <input type="button" value="Buy" />
-      </form>
-    </div>
-  @endif
 </section>
 <!-- /Hero -->
 @endsection
