@@ -21,6 +21,7 @@ class EventCrudController extends CrudController
         $this->crud->setModel('App\Models\Event');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/event');
         $this->crud->setEntityNameStrings('event', 'events');
+        $this->crud->enableAjaxTable();
 
         /*
         |--------------------------------------------------------------------------
@@ -30,15 +31,24 @@ class EventCrudController extends CrudController
 
         // ------ CRUD FIELDS
         $this->crud->addField([
-            'name' => 'id_key',
-            'label' => "Short Event ID"
-        ], 'update/create/both');
+            'name' => 'event_key',
+            'label' => 'Unique ID (E.g. "launch")',
+            'type' => 'event_key'
+        ], 'create');
+        
+        $this->crud->addField([
+            'name' => 'event_key',
+            'label' => 'Unique ID (E.g. "launch")',
+            'type' => 'event_key',
+            'attributes' => ['disabled' => 'disabled']
+        ], 'update');
         
         $this->crud->addField([
             'name' => 'date',
             'label' => 'Date',
-            'type' => 'datetime'
-        ], 'update/create/both');
+            'type' => 'datetime',
+            'default' => date("Y/m/d", mktime(0,0,0,date("m"),date("d"),date("Y")))
+        ]);
         
         $this->crud->addField([
             'name' => 'url_fb',
@@ -56,13 +66,14 @@ class EventCrudController extends CrudController
         ]);
         
         $this->crud->addColumn([
-            'name' => 'title',
-            'label' => 'Title'
+            'name' => 'event_key',
+            'label' => 'Event ID',
+            'type' => 'text'
         ]);
         
         $this->crud->addColumn([
             'name' => 'date',
-            'label' => "Date",
+            'label' => 'Date',
             'type' => 'datetime'
         ]);
     }
@@ -78,6 +89,18 @@ class EventCrudController extends CrudController
 
     public function update(UpdateRequest $request)
     {
+        $password = $request->input('date');
+        $url_fb = $request->input('url_fb');
+        $url_instagram = $request->input('url_instagram');
+        $email = $request->input('email');
+        $event_key = $request->input('event_key');
+        
+        foreach ($request->all() as $field_key => $field_value) {
+            if (!$field_value) {
+                $request->replace($request->except([$field_key]));
+            }
+        }
+        
         // your additional operations before save here
         $redirect_location = parent::updateCrud($request);
         // your additional operations after save here

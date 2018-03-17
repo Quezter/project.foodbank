@@ -15,8 +15,9 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('event_key')->unique();
 
-            $table->date('date');
+            $table->datetime('date');
 
             $table->string('url_fb');
             $table->string('url_instagram');

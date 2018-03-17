@@ -17,8 +17,8 @@ class CreateEventDetailsTable extends Migration
             $table->increments('id');
             
             $table->string('lang');
-            $table->integer('event_id')->unsigned();
-            $table->foreign('event_id')->references('id')
+            $table->integer('event_key')->unsigned();
+            $table->foreign('event_key')->references('id')
                 ->on('events')->onUpdate('restrict')->onDelete('cascade');
                 
             $table->string('title');

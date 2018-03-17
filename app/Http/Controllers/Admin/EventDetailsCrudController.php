@@ -32,11 +32,21 @@ class EventDetailsCrudController extends CrudController
         $this->crud->addField([  // Select2
            'label' => "Event ID",
            'type' => 'select2',
-           'name' => 'event_id', // the db column for the foreign key
+           'name' => 'event_key', // the db column for the foreign key
            'entity' => 'event', // the method that defines the relationship in your Model
-           'attribute' => 'id_key', // foreign key attribute that is shown to user
+           'attribute' => 'event_key', // foreign key attribute that is shown to user
            'model' => "App\Models\Event" // foreign key model
-        ], 'update/create/both');
+        ], 'create');
+        
+        $this->crud->addField([  // Select2
+           'label' => "Event ID",
+           'type' => 'select2',
+           'name' => 'event_key', // the db column for the foreign key
+           'entity' => 'event', // the method that defines the relationship in your Model
+           'attribute' => 'event_key', // foreign key attribute that is shown to user
+           'model' => "App\Models\Event", // foreign key model
+           'attributes' => ['disabled' => 'disabled']
+       ], 'update');
         
         $this->crud->addField([
             'name' => 'lang',
@@ -45,7 +55,17 @@ class EventDetailsCrudController extends CrudController
             'options' => ['en' => 'EN', 'nl' => 'NL'],
             'allows_null' => false,
             'default' => 'en',
-        ], 'update/create/both');
+        ], 'create');
+        
+        $this->crud->addField([
+            'name' => 'lang',
+            'label' => 'Language Code',
+            'type' => 'select2_from_array',
+            'options' => ['en' => 'EN', 'nl' => 'NL'],
+            'allows_null' => false,
+            'default' => 'en',
+            'attributes' => ['disabled' => 'disabled']
+        ], 'update');
         
         $this->crud->addField([
             'name' => 'title',
@@ -64,12 +84,17 @@ class EventDetailsCrudController extends CrudController
         ], 'update/create/both');
         
         $this->crud->addColumn([
-            'name' => 'event', // the method that defines the relationship in your Model
+            'name' => 'event_key', // the method that defines the relationship in your Model
+            'type' => 'select',
             'label' => 'Event ID', // Table column heading
-            'type' => 'select2',
             'entity' => 'event', // the method that defines the relationship in your Model
-            'attribute' => 'id_key', // foreign key attribute that is shown to user
-            'model' => 'App\Models\Event', // foreign key model
+            'attribute' => 'event_key', // foreign key attribute that is shown to user
+            'model' => 'App\Models\Event' // foreign key model
+        ]);
+    
+        $this->crud->addColumn([
+            'name' => 'title',
+            'label' => 'Title'
         ]);
     
         $this->crud->addColumn([
@@ -77,11 +102,6 @@ class EventDetailsCrudController extends CrudController
             'label' => 'Language Code',
             'type' => 'select_from_array',
             'options' => ['en' => 'EN', 'nl' => 'NL']
-        ]);
-    
-        $this->crud->addColumn([
-            'name' => 'title',
-            'label' => 'Title'
         ]);
                 
         $this->crud->addColumn([

@@ -11,11 +11,11 @@ class EventDetails extends Model
     
     protected $table = 'event_details';
     protected $fillable = [
-      'title', 'body', 'location'
+        'event_key', 'title', 'body', 'location', 'lang'
     ];
     
     public function event()
     {
-        return $this->belongsTo('App\Models\Event');
+        return $this->belongsTo('App\Models\Event', 'event_key', 'id');
     }
 }
