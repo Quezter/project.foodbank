@@ -103,11 +103,6 @@ class EventDetailsCrudController extends CrudController
             'type' => 'select_from_array',
             'options' => ['en' => 'EN', 'nl' => 'NL']
         ]);
-                
-        $this->crud->addColumn([
-            'name' => 'date',
-            'label' => 'Date'
-        ]);
     }
 
     public function store(StoreRequest $request)

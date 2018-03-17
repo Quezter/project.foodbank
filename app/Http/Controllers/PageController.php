@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cookie;
 
+use App\Models\Event;
+
 class PageController extends Controller
 {
   /**
@@ -29,8 +31,16 @@ class PageController extends Controller
    * Opens the support/help page.
    *
    */
-  function event() {
-    return view('pages.event');
+  function event(Request $request) {
+     $currentLocale = $request->cookie('locale') ?: 'en';
+      
+     $events = Event::all()
+        ->load('details')
+        ->sortByDesc('date');
+      
+    return view('pages.event', [
+        'events' => $events
+    ]);
   }
 
   /**
@@ -50,7 +60,7 @@ class PageController extends Controller
   }
   
   function changeLang(Request $request) {
-    $app= App::getFacadeRoot();
+    $app = App::getFacadeRoot();
     $currentLocale = $request->cookie('locale') ?: 'en';
     
     switch ($currentLocale) {
