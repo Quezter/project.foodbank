@@ -21,7 +21,31 @@
                     <div class="box-title">{{ trans('backpack::base.login_status') }}</div>
                 </div>
 
-                <div class="box-body">{{ trans('backpack::base.logged_in') }}</div>
+                <div class="box-body">
+                    <div>
+                        {{ trans('backpack::base.logged_in') }}
+                    </div>
+                    
+                    <div>
+                        <p>
+                            Build sections:
+                        </p>
+                        <ul>
+                            <li>Events - Creating and editing events.</li>
+                            <li>Events Details - Creating and editing events details in different languages.</li>
+                        </ul>
+                        <p>
+                            Future sections:
+                        </p>
+                        <ul>
+                            <li>Initiatives</li>
+                            <li>Initiatives Details</li>
+                            <li>Site Configurations - Maintaining site related matters (Can be form url, cover photo, color theme)</li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
