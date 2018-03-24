@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class EventDetailsRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
+class InitiativeDetailsRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -41,7 +41,7 @@ class EventDetailsRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
             $result = \DB::table( $table )->select( \DB::raw( 1 ) )->where( $fields )->first();
 
             return empty( $result ); // edited here
-        }, 'You cannot have two event details for the same event/language combination!' );
+        }, 'You cannot have two event details for the same initiative/language combination!' );
         
         switch($this->method())
         {
@@ -53,11 +53,10 @@ class EventDetailsRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
           case 'POST':
           {
               return [
-                  'event_key' => 'required|composite_unique:event_details,lang',
-                  'lang' => 'required|composite_unique:event_details,event_key',
+                  'initiative_key' => 'required|composite_unique:initiative_details,lang',
+                  'lang' => 'required|composite_unique:initiative_details,initiative_key',
                   'title' => 'required',
-                  'body' => 'required',
-                  'location' => 'required'
+                  'body' => 'required'
               ];
           }
           case 'PUT':
@@ -65,8 +64,7 @@ class EventDetailsRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
           {
               return [
                   'title' => 'required',
-                  'body' => 'required',
-                  'location' => 'required'
+                  'body' => 'required'
               ];
           }
           default:
@@ -82,11 +80,10 @@ class EventDetailsRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
     public function attributes()
     {
         return [
-            'event_key' => '"Unique Event ID"',
+            'initiative_key' => '"Unique Initiative ID"',
             'lang' => '"Language"',
             'title' => '"Title"',
-            'body' => '"Description"',
-            'location' => '"Location"'            
+            'body' => '"Description"'        
         ];
     }
 

@@ -24,7 +24,27 @@ class InitiativeRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
      */
     public function rules()
     {
-        return [];
+        switch($this->method())
+        {
+          case 'GET':
+          case 'DELETE':
+          {
+              return [];
+          }
+          case 'POST':
+          {
+              return [
+                  'initiative_key' => 'required'
+              ];
+          }
+          case 'PUT':
+          case 'PATCH':
+          {
+              return [];
+          }
+          default:
+              break;
+        }
     }
 
     /**
@@ -34,7 +54,9 @@ class InitiativeRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
      */
     public function attributes()
     {
-        return [];
+        return [
+            'initiative_key' => '"Initiative Unique ID"',
+        ];
     }
 
     /**
