@@ -22,25 +22,28 @@
                 </div>
 
                 <div class="box-body">
-                    <div>
+                    <h1>
                         {{ trans('backpack::base.logged_in') }}
-                    </div>
+                    </h1>
                     
                     <div>
-                        <p>
-                            Build sections:
-                        </p>
+                        <h3>
+                            Built sections:
+                        </h3>
                         <ul>
                             <li>Events - Creating and editing events.</li>
-                            <li>Events Details - Creating and editing events details in different languages.</li>
-                        </ul>
-                        <p>
-                            Future sections:
-                        </p>
-                        <ul>
+                            <li>Event Details - Creating and editing events details in different languages.</li>
                             <li>Initiatives</li>
-                            <li>Initiatives Details</li>
-                            <li>Site Configurations - Maintaining site related matters (Can be form url, cover photo, color theme)</li>
+                            <li>Initiative Details</li>
+                            <li>Site Configuration - "Join us" form url</li>
+                        </ul>
+                        <h3>
+                            Future sections:
+                        </h3>
+                        <ul>
+                            <li>Publications</li>
+                            <li>Publication Details</li>
+                            <li>Site Configurations - Maintaining site related matters (Can be about information, cover photo(s), color theme)</li>
                         </ul>
                         
                     </div>

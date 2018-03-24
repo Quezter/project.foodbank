@@ -14,7 +14,7 @@
               </div>
               
               <hr />
-              <div class="project-end"></div>      
+              <div class="project-end"></div>
             </div>
             @endif
         @endforeach
