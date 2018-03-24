@@ -2,25 +2,22 @@
 @section('title', 'Initiatives')
 
 @section('main')
-  <div class="container">
-    <div>
-      <div class="jumbotron project-jumbotron ffb" style="margin-top: 20px;">
-        <h1 class="display-3">@lang('global.initiative_one_title')</h1>
-        <p class="lead">@lang('global.initiative_one_body')</p>
-      </div>
-      
-      <hr />
-      <div class="project-end"></div>      
+    <div class="container">
+    @foreach ($initiatives as $initiative)
+        @foreach ($initiative->details as $key => $detail)
+            @if ($detail->lang === Config::get('app.locale'))
+            <div>
+              <div class="jumbotron project-jumbotron" 
+                    style="margin-top: 20px; background-image: url({{$initiative->pic_url}})">
+                <h1 class="display-3">{{ $detail->title }}</h1>
+                <p class="lead">{{ $detail->body }}</p>
+              </div>
+              
+              <hr />
+              <div class="project-end"></div>      
+            </div>
+            @endif
+        @endforeach
+    @endforeach
     </div>
-    
-    <div>
-      <div class="jumbotron project-jumbotron icb" style="margin-top: 20px;">
-        <h1 class="display-3">@lang('global.initiative_two_title')</h1>
-        <p class="lead">@lang('global.initiative_two_body')</p>
-      </div>
-
-      <hr />
-      <div class="project-end"></div>      
-    </div>
-  </div>
 @endsection

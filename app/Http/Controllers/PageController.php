@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cookie;
 
-use App\Models\Event;
 use App\Models\Config;
+use App\Models\Initiative;
+use App\Models\Event;
 
 class PageController extends Controller
 {
@@ -28,9 +29,15 @@ class PageController extends Controller
    * Opens the order page.
    *
    */
-  function project() {
+  function project(Request $request) {
+    $currentLocale = $request->cookie('locale') ?: 'en';
+
+    $initiatives = Initiative::all()
+        ->load('details');
     
-    return view('pages.project');
+    return view('pages.project', [
+        'initiatives' => $initiatives
+    ]);
   }
 
   /**
