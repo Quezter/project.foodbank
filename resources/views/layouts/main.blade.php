@@ -61,7 +61,6 @@
     <!-- Header -->
     <header id="header">
       <div class="container">
-
         <a href="{{ url('/') }}">
           <div id="logo" class="pull-left">
             {{-- <img src="{{ URL::asset('images/logo.png') }}" alt="" title="" /></img> --}}
@@ -77,7 +76,7 @@
             <li><a href="/project">@lang('global.initiatives')</a></li>
             <li><a href="/event">@lang('global.events')</a></li>
             <li><a href="http://www.amsterdam.voedselbank.org/doneerknop/" target="_blank">@lang('global.donate')</a></li>
-            <li><a href="https://docs.google.com/forms/d/1Tv7wzKeA3AQSJHzN7LGTTmEJLckNC67OrTNGd_agUPk/viewform?ts=5a2a607d&edit_requested=true" target="_blank">@lang('global.join_us')</a></li>
+            <li><a href="{{$join_us_form->value}}" target="_blank">@lang('global.join_us')</a></li>
             <!--
             <li class="menu-has-children"><a href="">Drop Down</a>
               <ul>
@@ -143,7 +142,7 @@
           </div>
 
           <div id="btn-apply-now" class="col-lg-3 col-sm-12 text-lg-right text-center">
-            <a class="btn-bell btn-ghost" href="https://docs.google.com/forms/d/1Tv7wzKeA3AQSJHzN7LGTTmEJLckNC67OrTNGd_agUPk/viewform?ts=5a2a607d&edit_requested=true" target="_blank">
+            <a class="btn-bell btn-ghost" href="{{$join_us_form->value}}" target="_blank">
               @lang('global.join_us')
             </a>
           </div>

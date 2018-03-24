@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cookie;
 
 use App\Models\Event;
+use App\Models\Config;
 
 class PageController extends Controller
 {
@@ -15,7 +16,12 @@ class PageController extends Controller
    *
    */
   function start(Request $request) {
-    return view('pages.home');
+    $join_us_form = Config::where('name', 'join_us_form')
+        ->first();
+      
+    return view('pages.home', [
+        'join_us_form' => $join_us_form
+    ]);
   }
 
   /**

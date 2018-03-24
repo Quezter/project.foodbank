@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
 use App\Http\Requests\ConfigRequest as UpdateRequest;
-use Illuminate\Support\Facades\DB;
 
 class ConfigCrudController extends CrudController
 {
@@ -19,8 +18,9 @@ class ConfigCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Config');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/config');
-        $this->crud->setEntityNameStrings('config', 'Configurations');
+        $this->crud->setEntityNameStrings('config', 'configurations');
         $this->crud->removeButton('create');
+        $this->crud->removeButton('delete');
         $this->crud->enableAjaxTable();
 
         /*
@@ -29,15 +29,27 @@ class ConfigCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
+        // ------ CRUD FIELDS
+        $this->crud->addField([
+            'name' => 'name',
+            'label' => 'Configuration Key',
+            'attributes' => ['disabled' => 'disabled']
+        ], 'update');
+        
+        $this->crud->addField([
+            'name' => 'value',
+            'label' => 'Configuration Value'
+        ], 'update');
+
         // ------ CRUD COLUMNS
         $this->crud->addColumn([
             'name' => 'name',
             'label' => 'Key'
         ]);
-
+        
         $this->crud->addColumn([
-           'label' => "Value",
-           'name' => 'value'
+           'name' => 'value',
+           'label' => "Value"
         ]);
     }
 

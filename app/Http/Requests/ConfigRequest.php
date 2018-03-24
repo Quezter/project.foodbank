@@ -25,7 +25,6 @@ class ConfigRequest extends \Backpack\CRUD\app\Http\Requests\CrudRequest
     public function rules()
     {
         return [
-          'name' => 'required',
           'value' => 'required'
         ];
     }

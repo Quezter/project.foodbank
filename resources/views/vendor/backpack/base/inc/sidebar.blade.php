@@ -17,7 +17,7 @@
           {{-- <li disable="disable"><a href="{{ url('admin/initiative-details') }}"><i class="fa fa-tag"></i> <span>Initiatives Details</span></a></li> --}}
           <li><a href="{{ url('admin/event') }}"><i class="fa fa-tag"></i> <span>Events</span></a></li>
           <li><a href="{{ url('admin/event-details') }}"><i class="fa fa-tag"></i> <span>Events Details</span></a></li>
-          {{-- <li disable="disable"><a href="{{ url('admin/config') }}"><i class="fa fa-tag"></i> <span>Configurations</span></a></li> --}}
+          <li><a href="{{ url('admin/config') }}"><i class="fa fa-tag"></i> <span>Configurations</span></a></li>
 
           <!-- ======================================= -->
           {{-- <li class="header">Other menus</li> --}}
